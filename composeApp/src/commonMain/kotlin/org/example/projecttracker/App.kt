@@ -40,7 +40,7 @@ fun App() {
                     modifier = Modifier.fillMaxWidth(),
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
-                    Text("heyyyyyyyyyy girllllllllll💗💗💗💗💗💗💗💗💗💗💗💗💗💗")
+                    Text("Hellooooo babuuuuuuu jiiiiiiiiiiii")
                 }
             }
         }
