@@ -7,6 +7,10 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.safeContentPadding
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
+import androidx.compose.ui.unit.dp
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -21,7 +25,9 @@ import trackerkmp.composeapp.generated.resources.compose_multiplatform
 
 @Composable
 @Preview
-fun App() {
+fun App(
+    onNavigateToGlassMorphism: () -> Unit = {}
+) {
     MaterialTheme {
         var showContent by remember { mutableStateOf(false) }
         Column(
@@ -42,6 +48,16 @@ fun App() {
                 ) {
                     Text("Hellooooo babuuuuuuu jiiiiiiiiiiii")
                 }
+            }
+            
+            Spacer(modifier = Modifier.height(32.dp))
+            
+            // Glass Morphism Button
+            Button(
+                onClick = onNavigateToGlassMorphism,
+                modifier = Modifier.fillMaxWidth(0.8f)
+            ) {
+                Text("🎨 Glass Morphism Effects")
             }
         }
     }
